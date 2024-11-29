@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Options</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+    
+    /* Payment Container */
+    .payment-container {
+      background-color: #fff;
+      width: 350px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .payment-header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Radio Button Group */
+    .option {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    
+    .option input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .option label {
+      flex-grow: 1;
+    }
+
+    /* Bank Icons Section */
+    .net-banking-header {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .bank-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      justify-content: space-between;
+    }
+
+    .bank-icon {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .bank-icon img {
+      width: 70%;
+      height: auto;
+    }
+
+    .bank-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* Pay Button */
+    .pay-button {
+      width: 100%;
+      background-color: #5e00b0;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.2s;
+    }
+
+    .pay-button:hover {
+      background-color: #45008a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-container">
+    <div class="payment-header">Bhargav Pesticides Pvt. Ltd</div>
+
+    <!-- Payment Options -->
+    <div class="option">
+      <input type="radio" id="qr" name="payment-method">
+      <label for="qr">Show QR Code</label>
+      <span>&#x1F4F7;</span>
+    </div>
+    
+    <div class="option">
+      <input type="radio" id="upi" name="payment-method">
+      <label for="upi">UPI ID</label>
+      <span>&#x1F4EC;</span>
+    </div>
+    
+    <div class="option">
+      <input type="radio" id="card" name="payment-method">
+      <label for="card">Card</label>
+      <span>&#x1F4B3;</span>
+    </div>
+
+    <!-- Net Banking Options -->
+    <div class="net-banking-header">Net Banking</div>
+    <div>Choose your bank to complete payment</div>
+
+    <div class="bank-icons">
+      <div class="bank-icon">
+        <img src="hdfc.png" alt="HDFC Bank">
+      </div>
+      <div class="bank-icon">
+        <img src="icici.jpeg" alt="ICICI Bank">
+      </div>
+      <div class="bank-icon">
+        <img src="axis.png" alt="Axis Bank">
+      </div>
+      <div class="bank-icon">
+        <img src="sbi.jpeg" alt="SBI">
+      </div>
+    </div>
+
+    <!-- Pay Button -->
+    <a href="https://www.phonepe.com/" target="_blank"><button class="pay-button">PAY ₹</button></a>
+  </div>
+
+</body>
+</html>

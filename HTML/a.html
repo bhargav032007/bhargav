@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 200px  auto;
+            grid-template-rows: 30% auto 20%;
+            grid-template-areas: 
+            "header header"
+            "sidebar content"
+            "footer footer"
+            ;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            height: 100vh;
+            border: 5px solid rgb(19, 19, 19);
+
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+            border: 4px solid red;
+            border-radius: 10%;
+            color: rgb(255, 0, 238);
+            text-align: center;
+            font-size: 50px;
+            font-style: arial;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: darkviolet;
+            
+        }
+        .content{
+            grid-area: content;
+            background-color: deeppink;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">LOVELY PROFESSIONAL UNIVERSITY</div>
+        <div class="sidebar"><h1>LOCATION</h1>
+            Jalandhar - Delhi, Grand Trunk Rd, Phagwara, Punjab 144411
+Lovely Professional University, address
+            <h2 style="color: aliceblue;">"OUR MOTTO YOUR SUCCESS"</h2>
+        </div>
+        <div class="content"><h1>LPU at a glance</h1>
+            A university with the infrastructure of global standards, internationally benchmarked curricula, rich diversity of students, innovative pedagogy for participative and experiential learning with focus on research, innovation and entrepreneurship.
+            
+            
+            500000+
+            Global LPU community
+            3000+
+            International students
+            150+
+            Programmes offered
+            200+
+            Industry Collaborations
+            our PHILOSOPHY
+            What LPU believes in
+            our vision
+            To be a premier academic institution, recognized internationally for its contribution to industry and society through excellence in teaching, learning, research, internationalization, entrepreneurship and leadership.
+            our mission
+            To transform education through academic rigour, practical orientation and outcome based teaching.
+            To develop and implement a relationship of cooperation between industry and academia.
+            To undertake impactful research addressing local, national and global challenges.
+            To prepare graduates to be lifelong learners with strong analytical and leadership skills.
+            To develop global professionals and entrepreneurs with innovative spirit, tolerance and desire to make a difference to the society.</div>
+        <div class="footer"><h1>Late Sh. Baldev Raj Mittal</h1>
+            Founder Chairman
+            Late Sh. Baldev Raj Mittal, the Founder Chairman of Lovely Group, was an entrepreneur par excellence. The heights gained by the Lovely Group bear testimony to his tireless efforts, indomitable will, and strong sense of commitment to his ideals and goals. His cherished conviction is a treasured legacy which will.
+            </div>
+    </div>
+</body>
+</html>

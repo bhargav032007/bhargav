@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        #p{
+    background-color: lightgreen;
+}
+#d{
+    background-color: lightcoral;
+}
+table{
+    width:90%;
+    text-align: center;
+    height: 100%;
+}
+    </style>
+</head>
+<body>
+    <table border="2px" cellspacing="0px" cellpadding="0px">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Electronics</td>
+                <td id="p">Smartphone</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td id="p">Laptop</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td id="d">Tablet</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Home Appliances</td>
+                <td id="p">Microwave</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td id="p">Refrigerator</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Furniture</td>
+                <td id="p">Sofa</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td id="d">Dining Table</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Clothing</td>
+                <td id="p">T-Shirts</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td id="d">Jeans</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sports Equipment</td>
+                <td id="p">Football</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td id="p">Tennis Racket</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

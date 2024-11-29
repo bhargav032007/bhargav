@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    background-image: url(crop1.png);
+    background-size: cover;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-attachment: fixed;
+}
+header {
+    background-color: #249b0f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    justify-items: space-evenly;
+    border-radius: 20px;
+}
+main {
+    padding: 2rem;
+    text-align: center;
+}
+.info {
+    margin-bottom: 2rem;
+}
+.form-section {
+    margin-bottom: 2rem;
+}
+nav a{
+    margin: 50px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    justify-content:space-between;
+}
+textarea {
+    width: 80%;
+    height: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+label {
+    font-weight: bold;
+}
+
+button {
+    background-color: #32f905;
+    color: rgb(17, 17, 17);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Times New Roman';
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: #45a049;
+}
+#results {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.menu-item h3 {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #333;
+}
+.menu-item p {
+    color: #555;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+.menu-item button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #218838;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px; 
+    margin: auto;
+    overflow: hidden;
+    margin-bottom:20px ;
+}
+
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: slideAnimation 16s infinite;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    animation-delay: 3s;
+}
+.slide:nth-child(3) {
+    animation-delay: 6s;
+}
+.slide:nth-child(4) {
+    animation-delay: 9s;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slideAnimation {
+    0%, 25% {
+        opacity: 1;
+    }
+    30%, 100% {
+        opacity: 0;
+    }
+}
+img{
+    border-radius: 20px;
+    border: black;
+}
+.fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+    background-color: #3b3737;
+    font-family: Arial, sans-serif;
+    background-color: rgb(70, 73, 90);
+    background-image: url();
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.social-icons {
+    display: flex;
+    gap: 120px;
+}
+.social-icon {
+    font-size: 50px;
+    color: #07fcbb;
+    transition: all 0.75s ease;
+    cursor: pointer;
+}
+.social-icon:hover {
+    transform: scale(1.2);
+}
+#facebook:hover {
+    color: #1877F2;
+    box-shadow:0  0 25px #4bb783 ;
+    transform: rotate(360deg);
+   
+}
+#instagram:hover {
+    color: #fb0473;
+    box-shadow:0  0 25px #02f17e ;
+    transform: rotate(360deg);
+}
+#twitter:hover {
+    color: #1DA1F2;
+    box-shadow:0  0 55px #02f950 ;
+    transform: rotate(360deg);
+   
+}
+#linkedin:hover{
+    color: #4767f5;
+    box-shadow:0  0 25px #01f67f ;
+    transform: rotate(360deg);
+}
+#github:hover{
+    color: white;
+    box-shadow:0  0 25px #01f780 ;
+    transform: rotate(360deg);
+}
+
